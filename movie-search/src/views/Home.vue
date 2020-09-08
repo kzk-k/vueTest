@@ -53,41 +53,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-* {
-    box-sizing: border-box;
-}
-.row {
-    display: flex;
-    align-item: center;
-    justify-content: center;
-}
-input {
-    width: 300px;
-    height: 40px;
-    padding: 0 8px;
-    border: 1px solid #aaa;
-    font-size: 16px;
-}
-button {
-    display: inline-block;
-    width: 80px;
-    height: 40px;
-    margin-left: 10px;
-    border: 1px solid #aaa;
-    font-size: 16px;
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-}
-li {
-    max-width: 30%;
-}
-.movieTitle {
-    font-size: 20px;
-}
+<style lang="scss" scoped>
+@import '../sass/home';
 </style>
