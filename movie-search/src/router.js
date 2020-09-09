@@ -4,6 +4,9 @@ import Home from './views/Home.vue';
 // 非同期で読み込まれる
 // webpackChunkNameのコメントを無くすと数字の連番になる
 const Ip = () => import(/* webpackChunkName: "other1" */ './views/Ip.vue');
+const MovieSearch = () => import(/* webpackChunkName: "other2" */ './views/MovieSearch.vue');
+const RockPaperScissors = () =>
+    import(/* webpackChunkName: "other3" */ './views/RockPaperScissors.vue');
 
 Vue.use(VueRouter);
 
@@ -21,6 +24,16 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         // component: () => import(/* webpackChunkName: "1" */ './views/Ip.vue'),
         component: Ip,
+    },
+    {
+        path: '/movieSearch',
+        name: 'MovieSearch',
+        component: MovieSearch,
+    },
+    {
+        path: '/rockPaperScissors',
+        name: 'RockPaperScissors',
+        component: RockPaperScissors,
     },
 ];
 
