@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>Laravel Mix</title>
+        <link rel="stylesheet" href="dist/app.css" />
+    </head>
+    <body>
+        <div id="app">
+            <test-header></test-header>
+            <div id="nav">
+                <router-link to="/">Home</router-link> |
+                <router-link to="/other">Other</router-link>
+            </div>
+
+            <test-component></test-component>
+
+            <router-view />
+        </div>
+
+        <!-- <script src="dist/manifest.js"></script>
+        <script src="dist/vendor.js"></script> -->
+        <script src="dist/app.js"></script>
+    </body>
+</html>

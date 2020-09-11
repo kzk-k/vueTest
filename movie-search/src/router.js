@@ -1,12 +1,13 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from './views/Home.vue';
+import Home from './components/pages//Home.vue';
 // 非同期で読み込まれる
 // webpackChunkNameのコメントを無くすと数字の連番になる
-const Ip = () => import(/* webpackChunkName: "other1" */ './views/Ip.vue');
-const MovieSearch = () => import(/* webpackChunkName: "other2" */ './views/MovieSearch.vue');
+const Ip = () => import(/* webpackChunkName: "other1" */ './components/pages//Ip.vue');
+const MovieSearch = () =>
+    import(/* webpackChunkName: "other2" */ './components/pages//MovieSearch.vue');
 const RockPaperScissors = () =>
-    import(/* webpackChunkName: "other3" */ './views/RockPaperScissors.vue');
+    import(/* webpackChunkName: "other3" */ './components/pages//RockPaperScissors.vue');
 
 Vue.use(VueRouter);
 
@@ -22,7 +23,7 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        // component: () => import(/* webpackChunkName: "1" */ './views/Ip.vue'),
+        // component: () => import(/* webpackChunkName: "1" */ './components/pages//Ip.vue'),
         component: Ip,
     },
     {

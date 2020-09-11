@@ -28,7 +28,7 @@ export default {
             hand: ['goo', 'choki', 'paa'],
             enemyHand: '',
             enemyHandImage: '',
-            result: 'いざ勝負！',
+            result: '勝負！',
         };
     },
     methods: {
